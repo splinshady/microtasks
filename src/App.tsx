@@ -4,6 +4,7 @@ import {Car} from "./components/Car";
 import Money from "./components/Money";
 import Input from "./components/Input";
 import Button from "./components/Button";
+import OnOff from "./components/OnOff";
 
 export type carsDataType = {
     manufacturer: string,
@@ -61,6 +62,7 @@ function App() {
                     )
                 })}
             </div>
+            <OnOff />
         </div>
     );
 }
