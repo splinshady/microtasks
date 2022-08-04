@@ -4,3 +4,20 @@
 
 .button {
 }
+
+.star {
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.selected {
+    fill: gold;
+}
+
+.star_container {
+    display: flex;
+    gap:5px;
+
+}

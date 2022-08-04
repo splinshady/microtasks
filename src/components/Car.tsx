@@ -12,10 +12,6 @@ export const Car = (props: ListPropsType) => {
     return (
         <div>
             <h3>{props.title}</h3>
-            <div>
-                <input/>
-                <button>+</button>
-            </div>
             <table className={style.table}>
                 <thead>
                     <tr>
@@ -36,11 +32,6 @@ export const Car = (props: ListPropsType) => {
                 })}
                 </tbody>
             </table>
-            <div>
-                <Button name={'All'} callback={() => {console.log()}}/>
-                <Button name={'Active'} callback={() => {console.log('hi')}}/>
-                <Button name={'Completed'} callback={() => {console.log('hi')}}/>
-            </div>
         </div>
     );
 };
