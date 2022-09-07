@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from "./Button";
+import Button from "./ButtonMy";
 import {FilterType} from "./Money";
 
 type CurrentMoneyType = {

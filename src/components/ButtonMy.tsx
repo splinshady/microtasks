@@ -1,12 +1,13 @@
 import React from 'react';
 import style from './Style.module.css';
+import Button from '@mui/material/Button';
 
 type ButtonPropsType = {
     name: string,
     callback: () => void
 }
 
-const Button = (props: ButtonPropsType) => {
+const ButtonMy = (props: ButtonPropsType) => {
 
     const clickHandler = () => {
         props.callback();
@@ -14,9 +15,9 @@ const Button = (props: ButtonPropsType) => {
 
     return (
         <div>
-            <button className={style.button} onClick={clickHandler}>{props.name}</button>
+            <Button color={'secondary'} variant="contained" onClick={clickHandler}>{props.name}</Button>
         </div>
     );
 };
 
-export default Button;
+export default ButtonMy;

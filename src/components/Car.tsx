@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Style.module.css';
-import Button from "./Button";
+import Button from "./ButtonMy";
 import {carsDataType} from "../App";
 
 type ListPropsType = {

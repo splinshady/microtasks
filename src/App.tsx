@@ -3,7 +3,7 @@ import './App.css';
 import {Car} from "./components/Car";
 import Money from "./components/Money";
 import Input from "./components/Input";
-import Button from "./components/Button";
+import ButtonMy from "./components/ButtonMy";
 import OnOff from "./components/OnOff";
 import Rating from "./components/Rating";
 
@@ -56,7 +56,7 @@ function App() {
             <div className={'input_container'}>
                 <h3>Input</h3>
                 <Input value={inputValue} setInputValue={setInputValue}/>
-                <Button name={'add'} callback={addMessageCallback} />
+                <ButtonMy name={'add'} callback={addMessageCallback} />
                 {message.map((item, index) => {
                     return (
                         <div key={index}>{item.message}</div>
