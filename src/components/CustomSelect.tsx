@@ -3,7 +3,8 @@ import style from './styles/CustomSelect.module.css';
 
 export type ItemType = {
     title: string,
-    value: any
+    value: any,
+    country?: string,
 }
 
 export type CustomSelectPropsType = {
@@ -13,6 +14,8 @@ export type CustomSelectPropsType = {
 }
 
 export function CustomSelect(props: CustomSelectPropsType) {
+    console.log('Select')
+
     const [showOptionList, setShowOptionList] = useState(false)
     const [itemHover, setItemHover] = useState(props.value)
 
